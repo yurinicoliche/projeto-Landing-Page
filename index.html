@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <link rel="shortcut icon" href="../svgs/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div>
+            <h1 class="h1LoginLeft">Faça Login e <br>Aproveite</h1>
+            <img src="svgs/astronaut-animate (3).svg" class="image" alt="astronaut">
+        </div>
+        <form action="" id="form">
+            <div class="divH1">
+                <h1>login</h1>
+            </div>
+            <label for="user" class="labels">User</label>
+            <input id="user" type="text" class="inputs" placeholder="User">
+
+            <label for="password" class="labels">Password</label>
+            <input id="password" type="password" class="inputs" placeholder="Password">
+
+            <p style="display: none;" id="loginError">Incorrect username or password</p>
+
+            <input type="submit" class="submit" id="submit" value="login">
+
+            <div class="signup">
+                <p class="signupP">Não tem uma conta?</p>
+                <a href="/signup/signup.html" class="signupLink">Cadastre-se</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

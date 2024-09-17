@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../login.css">
+    <script src="signup.js" defer></script>
+    <link rel="shortcut icon" href="../svgs/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div>
+            <h1 class="h1LoginLeft">Cadastre-se e <br>Entre Para o Time</h1>
+            <img src="mobile-login-animate (2).svg" class="image" alt="astronaut">
+        </div>
+        <form action="" id="form">
+            <div class="divH1">
+                <h1>Signup</h1>
+            </div>
+            <label for="user" class="labels">User</label>
+            <input id="user" type="text" class="inputs" placeholder="User" required>
+            <p style="display: none;" id="userError">User must have at least 3 words</p>
+
+            <label for="password" class="labels">Password</label>
+            <input id="password" type="password" class="inputs" placeholder="Password" required>
+            <p style="display: none;" id="passwordError">Password must have at least 8 characters, one capital, one lower, one number</p>
+
+            <label for="confirmPassword" class="labels">Confirm Password</label>
+            <input id="confirmPassword" class="inputs" type="password" placeholder="Confirm Password" required>
+            <p style="display: none;" id="confirmError">Confirm password must match password</p>
+
+            <div id="error"></div>
+
+            <input type="submit" class="submit" id="submit" value="signup">
+
+            <div class="signup">
+                <p class="signupP">Já tem uma conta?</p>
+                <a href="../index.html" class="signupLink">Entrar</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
